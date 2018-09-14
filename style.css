@@ -16,7 +16,7 @@
 }
 
 body {
-    rgb(228, 231, 205);
+    background:rgb(190, 221, 151);
 }
 
 .wrapper {
@@ -32,6 +32,17 @@ body {
 nav {
     display: flex;
     align-items: center;
+}
+
+.main-wrapper {
+    margin-top: 20px;
+    background: url("./images/info.png");
+    background-size: 100% 100%;
+    min-height: 60vh;
+    width: 100%;
+    box-shadow: 10px 15px 30px green;
+    border-radius: 50px;
+    display: block;
 }
 
 @keyframes moveAva {
