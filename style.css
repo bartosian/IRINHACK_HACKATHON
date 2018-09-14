@@ -4,6 +4,8 @@
     margin: 0;
 }
 
-body {
-
+.main-h {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
