@@ -8,7 +8,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
-    text-shadow: 0 2px 10px grey;
+    text-shadow: 0 5px 10px rgb(88, 75, 69);
     color: white;
     font-size: 3rem;
     margin-top: -30px;
@@ -40,9 +40,10 @@ nav {
     background-size: 100% 100%;
     min-height: 60vh;
     width: 100%;
-    box-shadow: 10px 15px 30px green;
+    box-shadow: 0 0 50px green;
     border-radius: 50px;
     display: block;
+    animation: color 700ms ease-out infinite alternate;;
 }
 
 @keyframes moveAva {
@@ -51,4 +52,12 @@ nav {
     } to {
               transform: translateX(700px);
           }
+}
+
+@keyframes color {
+    from {
+        box-shadow: 0 0 50px green;
+    } to {
+              box-shadow: 0 0 0 green;
+      }
 }
