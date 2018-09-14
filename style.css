@@ -43,7 +43,43 @@ nav {
     box-shadow: 0 0 50px green;
     border-radius: 50px;
     display: block;
-    animation: color 700ms ease-out infinite alternate;;
+    animation: color 700ms ease-out infinite alternate;
+}
+
+.img-block {
+    display: flex;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.img-block img {
+    width: 20%;
+    box-shadow: 0 15px 50px green;
+}
+
+.midImg {
+    transform: scale(1.5, 1.5);
+    z-index: 100;
+}
+
+.imgside {
+    transform: scale(1.3, 1.3);
+}
+
+.buy {
+    transform: translateY(-15px);
+}
+
+.foot {
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+    animation: rot 2s ease-out infinite alternate;;
+
+}
+footer {
+    margin-bottom: 60px;
 }
 
 @keyframes moveAva {
@@ -60,4 +96,10 @@ nav {
     } to {
               box-shadow: 0 0 0 green;
       }
+}
+
+@keyframes rot {
+    100% {
+        transform: scale(2, 2) rotate(360deg);;
+    }
 }
