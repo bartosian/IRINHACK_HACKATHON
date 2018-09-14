@@ -12,3 +12,17 @@
     color: white;
     font-size: 3rem;
 }
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-img {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
