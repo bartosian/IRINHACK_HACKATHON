@@ -75,11 +75,30 @@ nav {
     width: 150px;
     display: block;
     margin: 20px auto;
-    animation: rot 2s ease-out infinite alternate;;
+    animation: rot 2s ease-out infinite alternate;
 
 }
 footer {
     margin-bottom: 60px;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 250px;
+}
+
+.img-side {
+    width:200px;
+}
+
+.left {
+    animation: left 2s ease-out infinite alternate;
+}
+
+.right {
+    animation: right 2s ease-out infinite alternate;
 }
 
 @keyframes moveAva {
@@ -103,3 +122,16 @@ footer {
         transform: scale(2, 2) rotate(360deg);;
     }
 }
+
+@keyframes left {
+    100% {
+        transform:  translateX(-200px);
+    }
+}
+
+@keyframes right {
+    100% {
+        transform:  translateX(200px);
+    }
+}
+
